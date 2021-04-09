@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">我的APP</string>
+    <string name="home_text">这是主页</string>
+    <string name="button_first">第一个按钮</string>
+    <string name="helloworld">Hello World!</string>
+    <string name="handler_text_view">我的Handler教学</string>
+</resources>
