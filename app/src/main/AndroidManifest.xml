@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.newcheckstop.testproject">
-
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TestProject">
-        <activity android:name=".HandlerButtonActivity"></activity>
+        <receiver android:name=".TestWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@layout/widget_setting" />
+
+        </receiver>
+        <activity android:name=".WebViewButtonActivity" />
+
+        <receiver android:name=".TestBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.newcheckstop.testproject.broadcast" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".MusicService" />
+
+        <activity android:name=".SendBrocastActivity" />
+        <activity android:name=".MusicButtonActivity" />
+        <activity android:name=".HandlerButtonActivity" />
         <activity android:name=".TestFragmentActivity" />
         <activity android:name=".TestViewButtonActivity" />
         <activity android:name=".GridViewDemoActivity" />

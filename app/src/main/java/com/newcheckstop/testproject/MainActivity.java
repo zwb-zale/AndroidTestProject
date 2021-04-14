@@ -46,6 +46,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Button mhandlerbutton = (Button) findViewById(R.id.button_handler);
         mhandlerbutton.setOnClickListener(this);
+
+        Button mservicebutton = (Button) findViewById(R.id.button_musice_service);
+        mservicebutton.setOnClickListener(this);
+
+        Button mbroadcastbutton = (Button) findViewById(R.id.button_broadcast);
+        mbroadcastbutton.setOnClickListener(this);
+
+        Button mwebviewbutton = (Button) findViewById(R.id.button_webview);
+        mwebviewbutton.setOnClickListener(this);
     }
 
     @SuppressLint("NonConstantResourceId")
@@ -69,6 +78,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.button_handler:
                 startActivity(new Intent(MainActivity.this,HandlerButtonActivity.class));
+                break;
+            case R.id.button_musice_service:
+                startActivity(new Intent(MainActivity.this,MusicButtonActivity.class));
+                break;
+            case R.id.button_broadcast:
+                startActivity(new Intent(MainActivity.this,SendBrocastActivity.class));
+                break;
+            case R.id.button_webview:
+                startActivity(new Intent(MainActivity.this,WebViewButtonActivity.class));
                 break;
         }
     }

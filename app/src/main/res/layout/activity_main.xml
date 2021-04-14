@@ -17,7 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/button_first"
-        android:text="第二个按钮" />
+        android:text="ListView" />
 
     <Button
         android:id="@+id/button_third"
@@ -54,5 +54,26 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/button_fragment"
         android:text="handler按钮" />
+
+    <Button
+        android:id="@+id/button_musice_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_handler"
+        android:text="SERVICE按钮" />
+
+    <Button
+        android:id="@+id/button_broadcast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_musice_service"
+        android:text="broadcast按钮" />
+
+    <Button
+        android:id="@+id/button_webview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_broadcast"
+        android:text="WEBVIEW" />
 
 </RelativeLayout>
